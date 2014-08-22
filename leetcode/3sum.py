@@ -14,6 +14,7 @@ __author__ = "Yang"
 
 import time
 
+#博士
 class Solution:
     # @return a list of lists of length 3, [[val1,val2,val3]]
     def threeSum(self, num):
@@ -47,8 +48,10 @@ class Solution:
                             break;
         return result
 
+#网上
+class Solution1:
     # @return a list of lists of length 3, [[val1,val2,val3]]
-    def threeSum1(self, num):
+    def threeSum(self, num):
         res = []
         sortnum = sorted(num)
         length = len(sortnum)
@@ -85,8 +88,10 @@ class Solution:
                             break
         return res
 
+#我
+class Solution2:
     # @return a list of lists of length 3, [[val1,val2,val3]]
-    def threeSum2(self, num):
+    def threeSum(self, num):
         length = len(num)
         if length < 3:
             return []
@@ -126,6 +131,8 @@ class Solution:
                             break
             index += c
         return result
+
+
 
 if __name__ == "__main__":
     num = [-1, 0, 1, 2, -1, -4]
