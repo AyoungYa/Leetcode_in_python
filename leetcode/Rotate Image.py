@@ -19,30 +19,16 @@ class Solution:
     def rotateFunction(self, matrix, m = 0): # m means have rotated circles
         n = len(matrix)
         for m in xrange(n / 2):
-            # print 'running'
             if n-2*m <= 1:
                 return matrix
             else:
-                # print 'm =====', m
+
                 for i in xrange(m, n - 1 - m):
                     temp = matrix[m][i]
-                    # print 'temp', temp
                     matrix[m][i] = matrix[n - i - 1][m]
-                    # print 'Step 1:'
-                    # for ele in matrix:
-                    #     print ele
                     matrix[n - i - 1][m] = matrix[n - 1 - m][n - 1 - i]
-                    # print 'Step 2:'
-                    # for ele in matrix:
-                    #     print ele
                     matrix[n - 1 - m][n - 1 - i] = matrix[i][n - 1 - m]
-                    # print 'Step 3:'
-                    # for ele in matrix:
-                    #     print ele
                     matrix[i][n - 1 - m] = temp
-                    # print 'Step 4:'
-                    # for ele in matrix:
-                    #     print ele
         return matrix
 
 if __name__ == "__main__":
