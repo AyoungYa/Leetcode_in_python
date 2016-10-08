@@ -45,7 +45,7 @@ class Solution:
                             if numtimes[i] >= t1 and numtimes[tl[0]] >= t2 and numtimes[tl[1]] >= t3:
                                 result.append(r)
                         elif tl[0] < i:
-                            break;
+                            break
         return result
 
 #网上
