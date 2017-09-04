@@ -14,7 +14,7 @@ class Solution:
     # @return an integer
     def climbStairs(self, n):
         #满足Fibonacci数列的规则，可直接利用Fibonacci完成。
-       if n < 2:
+        if n < 2:
             return 1
         else:
             answer = 0

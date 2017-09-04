@@ -28,8 +28,6 @@ class Solution:
                 min_sum = three_sum
         return min_sum
 
-
-
     # num为排序好的数组，从中去两个值加起来最接近target
     # 返回与目标值最近的两个数加和：a+b
     def twoSumClosest(self, num, target):
@@ -48,9 +46,6 @@ class Solution:
             if min_distance > distance:
                 min_distance = distance
                 min_value = sum_result
-
-            # if min_distance == 0:
-            #     return min_difference
 
             if difference > 0:
                 right_index -= 1

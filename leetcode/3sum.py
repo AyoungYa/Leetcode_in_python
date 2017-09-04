@@ -96,7 +96,7 @@ class Solution2:
         if length < 3:
             return []
         elif length == 3:
-            if not num[0] + num[1] + num[2]: return [sorted(num)]
+            if not sum(num): return [sorted(num)]
             else: return  []
 
         num.sort()
